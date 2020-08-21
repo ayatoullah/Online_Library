@@ -1,0 +1,61 @@
+c:\users\eman\source\repos\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.dll.config
+c:\users\eman\source\repos\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.dll
+c:\users\eman\source\repos\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.pdb
+c:\users\eman\source\repos\Online_Liberary_System\Online_Liberary_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\eman\source\repos\Online_Liberary_System\Online_Liberary_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\eman\source\repos\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.csprojResolveAssemblyReference.cache
+c:\users\eman\source\repos\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.csproj.CoreCompileInputs.cache
+c:\users\eman\source\repos\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.dll
+c:\users\eman\source\repos\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.pdb
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.dll.config
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.dll
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.pdb
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.dll
+C:\Users\Admin\Desktop\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.pdb
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.dll.config
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.dll
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.pdb
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.dll
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.SqlServer.dll
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.xml
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.SqlServer.xml
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.csprojResolveAssemblyReference.cache
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.csproj.CoreCompileInputs.cache
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.dll
+G:\ITI\EntityFrameWorkEEman\the fina version isa\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.pdb
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.csproj.CoreCompileInputs.cache
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.dll
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.pdb
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.dll.config
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.dll
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.pdb
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.dll
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.SqlServer.dll
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.xml
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.SqlServer.xml
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\the fina version isa\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.csprojResolveAssemblyReference.cache
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.csproj.CoreCompileInputs.cache
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.dll.config
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.dll
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\bin\Online_Liberary_System.pdb
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.dll
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.SqlServer.dll
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.xml
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\bin\EntityFramework.SqlServer.xml
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.dll
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.pdb
+E:\EntityFrame\finaaaaaaaaaaaaaaaaaaaaaaaaal\Online_Liberary_System\Online_Liberary_System\obj\Debug\Online_Liberary_System.csprojResolveAssemblyReference.cache

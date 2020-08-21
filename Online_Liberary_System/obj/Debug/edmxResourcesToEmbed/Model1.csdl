@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="libraryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="author">
+    <Key>
+      <PropertyRef Name="author_id" />
+    </Key>
+    <Property Name="author_id" Type="Int32" Nullable="false" />
+    <Property Name="fName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="books" Relationship="Self.FK_books_authors" FromRole="authors" ToRole="books" />
+  </EntityType>
+  <EntityType Name="book">
+    <Key>
+      <PropertyRef Name="book_id" />
+    </Key>
+    <Property Name="book_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="author_Id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="publisher" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="joinDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="publishDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="copiesCount" Type="Int32" Nullable="false" />
+    <Property Name="availableCopies" Type="Int32" Nullable="false" />
+    <Property Name="shelfNumber" Type="Int32" Nullable="false" />
+    <Property Name="NoOfPages" Type="Int32" Nullable="false" />
+    <Property Name="cat_id" Type="Int32" Nullable="false" />
+    <Property Name="ISBN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cover" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="author" Relationship="Self.FK_books_authors" FromRole="books" ToRole="authors" />
+    <NavigationProperty Name="category" Relationship="Self.FK_books_categories" FromRole="books" ToRole="categories" />
+    <NavigationProperty Name="Processes" Relationship="Self.FK_Process_books1" FromRole="books" ToRole="Process" />
+  </EntityType>
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="category_id" />
+    </Key>
+    <Property Name="ctegory_name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="category_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="books" Relationship="Self.FK_books_categories" FromRole="categories" ToRole="books" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="emp_Id" />
+    </Key>
+    <Property Name="emp_Id" Type="Int32" Nullable="false" />
+    <Property Name="hireDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="salary" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <NavigationProperty Name="user" Relationship="Self.FK_employees_users" FromRole="employees" ToRole="users" />
+    <NavigationProperty Name="Processes" Relationship="Self.FK_Process_employees" FromRole="employees" ToRole="Process" />
+  </EntityType>
+  <EntityType Name="Process">
+    <Key>
+      <PropertyRef Name="ProcessID" />
+    </Key>
+    <Property Name="ProcessID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="C_read_borrow" Type="libraryModel.read_borrow" Nullable="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="book_id" Type="Int32" Nullable="false" />
+    <Property Name="startDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="isdelivered" Type="Boolean" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="book" Relationship="Self.FK_Process_books1" FromRole="Process" ToRole="books" />
+    <NavigationProperty Name="employee" Relationship="Self.FK_Process_employees" FromRole="Process" ToRole="employees" />
+    <NavigationProperty Name="user" Relationship="Self.FK_Process_users1" FromRole="Process" ToRole="users" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="role" Type="libraryModel.role" />
+    <Property Name="birthDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="firstLogin" Type="Boolean" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="Int32" Nullable="false" />
+    <Property Name="is_Blocked" Type="Boolean" Nullable="false" />
+    <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="employee" Relationship="Self.FK_employees_users" FromRole="users" ToRole="employees" />
+    <NavigationProperty Name="Processes" Relationship="Self.FK_Process_users1" FromRole="users" ToRole="Process" />
+  </EntityType>
+  <Association Name="FK_books_authors">
+    <End Role="authors" Type="Self.author" Multiplicity="1" />
+    <End Role="books" Type="Self.book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="authors">
+        <PropertyRef Name="author_id" />
+      </Principal>
+      <Dependent Role="books">
+        <PropertyRef Name="author_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_books_categories">
+    <End Role="categories" Type="Self.category" Multiplicity="1" />
+    <End Role="books" Type="Self.book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="category_id" />
+      </Principal>
+      <Dependent Role="books">
+        <PropertyRef Name="cat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Process_books1">
+    <End Role="books" Type="Self.book" Multiplicity="1" />
+    <End Role="Process" Type="Self.Process" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="books">
+        <PropertyRef Name="book_id" />
+      </Principal>
+      <Dependent Role="Process">
+        <PropertyRef Name="book_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_employees_users">
+    <End Role="users" Type="Self.user" Multiplicity="1" />
+    <End Role="employees" Type="Self.employee" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="employees">
+        <PropertyRef Name="emp_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Process_employees">
+    <End Role="employees" Type="Self.employee" Multiplicity="1" />
+    <End Role="Process" Type="Self.Process" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employees">
+        <PropertyRef Name="emp_Id" />
+      </Principal>
+      <Dependent Role="Process">
+        <PropertyRef Name="emp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Process_users1">
+    <End Role="users" Type="Self.user" Multiplicity="1" />
+    <End Role="Process" Type="Self.Process" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="Process">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="libraryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="authors" EntityType="Self.author" />
+    <EntitySet Name="books" EntityType="Self.book" />
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="employees" EntityType="Self.employee" />
+    <EntitySet Name="Processes" EntityType="Self.Process" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <AssociationSet Name="FK_books_authors" Association="Self.FK_books_authors">
+      <End Role="authors" EntitySet="authors" />
+      <End Role="books" EntitySet="books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_books_categories" Association="Self.FK_books_categories">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="books" EntitySet="books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Process_books1" Association="Self.FK_Process_books1">
+      <End Role="books" EntitySet="books" />
+      <End Role="Process" EntitySet="Processes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_employees_users" Association="Self.FK_employees_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="employees" EntitySet="employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Process_employees" Association="Self.FK_Process_employees">
+      <End Role="employees" EntitySet="employees" />
+      <End Role="Process" EntitySet="Processes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Process_users1" Association="Self.FK_Process_users1">
+      <End Role="users" EntitySet="users" />
+      <End Role="Process" EntitySet="Processes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EnumType Name="read_borrow">
+    <Member Name="Read" Value="0" />
+    <Member Name="Borrow" Value="1" />
+  </EnumType>
+  <EnumType Name="role">
+    <Member Name="Basic_Admin" Value="0" />
+    <Member Name="Admin" Value="1" />
+    <Member Name="Employee" Value="2" />
+  </EnumType>
+</Schema>
